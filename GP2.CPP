@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int x1 , x2 , x3 , y1 , y2 , y3 , t;
+int gd =DETECT , gm = DETECT ;
+initgraph(&gd,&gm , "C:\TurboC4\TC\BGI");
+printf("enter values of vertrex v1:");
+scanf("%d %d",&x1,&y1);
+printf("enter values of vertrex v2:");
+scanf("%d %d",&x2,&y2);
+printf("enter values of vertrex v3:");
+scanf("%d %d",&x3,&y3);
+line(x1,y1,x2,y2);
+line(x2,y2,x3,y3);
+line(x1,y1,x3,y3);
+printf("enter the multiple for scaling coordinates:");
+scanf("%d",&t);
+line(x1*t,x2*t,y2*t);
+line(x2*t,y2*t,x3*t,y3*t);
+line(x1*t,y1*t,x3*t,y3*t);
+getch();
+closegraph();
+}
