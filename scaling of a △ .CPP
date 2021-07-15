@@ -5,7 +5,7 @@ void main()
 {
 int x1 , x2 , x3 , y1 , y2 , y3 , t;
 int gd =DETECT , gm = DETECT ;
-initgraph(&gd,&gm , "C:\TurboC4\TC\BGI");
+initgraph(&gd,&gm , "C:\\TC\\BGI");
 printf("enter values of vertrex v1:");
 scanf("%d %d",&x1,&y1);
 printf("enter values of vertrex v2:");
